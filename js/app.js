@@ -16,7 +16,7 @@ fetch('https://fakestoreapi.com/products').then(res => res.json()).then(data => 
     productBody += `
      <div class="col">
                         <div class="card shadow-sm"> 
-                         <img src="${element.image}" alt="">
+                         <img src="${element.image}" alt="" class="card-image-top" style="height:300px; width:100%; object-fit:contain;">
                             <div class="card-body">
                                 <h5 class="card-title">${element.title}</h5>
                                 <p class="card-text">${element.description}</p>
